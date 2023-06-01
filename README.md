@@ -5,24 +5,31 @@ Demos an issue with manually defining custom elements in Svelte 4 (pre-release) 
 
 ## Get started
 
+Init repo
+
 ```bash
 git clone https://github.com/patricknelson/svelte-v4-custom-elements-define.git
 cd svelte-v4-custom-elements-define
 npm i
+```
 
-# Reproduce bug
+Reproduce bug
+
+```bash
 git checkout main
 npm run dev
+```
 
-# Test workaround
+Test workaround
+
+```bash
 git checkout workaround
 npm run dev
 ```
 
-
 ## From scratch
 
-Init
+Init base files
 
 ```bash
 # select Svelte + JavaScript
