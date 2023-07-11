@@ -1,6 +1,6 @@
-# svelte-v4-custom-elements-define
+# svelte-v4-custom-elements
 
-Demos an issue with manually defining custom elements in Svelte 4 (pre-release) using `customElements.define()`.
+Special repo setup strictly for demoing bugs or other issues with custom elements in Svelte 4 (for use in Github issues).
 
 
 ## Get started
@@ -8,24 +8,18 @@ Demos an issue with manually defining custom elements in Svelte 4 (pre-release) 
 Init repo
 
 ```bash
-git clone https://github.com/patricknelson/svelte-v4-custom-elements-define.git
-cd svelte-v4-custom-elements-define
+git clone https://github.com/patricknelson/svelte-v4-custom-elements.git
+cd svelte-v4-custom-elements
 npm i
 ```
 
 Reproduce bug
 
 ```bash
-git checkout main
+git checkout BRANCH_NAME
 npm run dev
 ```
 
-Test workaround
-
-```bash
-git checkout workaround
-npm run dev
-```
 
 ## From scratch
 
@@ -35,8 +29,8 @@ Init base files
 # select Svelte + JavaScript
 npm init vite
 
-# Install but overwrite with Svelte v4
-npm i -D svelte@4.0.0-next.0
+# Install Svelte v4 (if not already present)
+npm i -D svelte@4.0.0
 ```
 
 Update Svelte compiler options in `vite.config.js` to enable custom elements, i.e. `customElement: true`.
